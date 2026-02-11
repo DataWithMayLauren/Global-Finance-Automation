@@ -1,0 +1,9 @@
+name: Run Finance Tool
+on: [push]
+jobs:
+  run-finance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Execute Python
+        run: python finance_tools.py
